@@ -1,72 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Desafio IESGO</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #f4f4f4;
-    }
+<meta charset="UTF-8">
+<title>Desafio</title>
 
-    .container {
-      display: grid;
-      grid-template-columns: repeat(3, 100px);
-      grid-template-rows: repeat(3, 100px);
-      gap: 10px;
-      align-items: center;
-      justify-items: center;
-    }
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial;
+}
 
-    .box {
-      width: 80px;
-      height: 80px;
-      border: 2px solid black;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 24px;
-      background-color: white;
-    }
+.grid {
+  display: grid;
+  grid-template-columns: 80px 40px 80px 60px;
+  grid-template-rows: 80px 40px 80px 40px;
+  gap: 5px;
+  align-items: center;
+  justify-items: center;
+}
 
-    .text {
-      font-size: 20px;
-      font-weight: bold;
-    }
+.box {
+  width: 70px;
+  height: 70px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
 
-    .empty {
-      visibility: hidden;
-    }
-  </style>
+.text {
+  font-size: 20px;
+}
+</style>
+
 </head>
 <body>
 
-  <div class="container">
-    <!-- Linha 1 -->
-    <div class="box">29</div>
-    <div class="text">-</div>
-    <div class="box">9</div>
+<div class="grid">
 
-    <!-- Linha 2 -->
-    <div class="text">+</div>
-    <div class="empty">x</div>
-    <div class="text">+</div>
+  <!-- linha 1 -->
+  <div class="box">24</div>
+  <div class="text">-</div>
+  <div class="box">4</div>
+  <div class="text">= 20</div>
 
-    <!-- Linha 3 -->
-    <div class="box">6</div>
-    <div class="text">+</div>
-    <div class="box">11</div>
-  </div>
+  <!-- linha 2 (sinais vertical) -->
+  <div class="text">+</div>
+  <div></div>
+  <div class="text">+</div>
+  <div></div>
 
-  <div style="position: absolute; top: 20%; left: 65%; font-size: 20px;">
-    = 20 <br><br>
-    = 17 <br><br>
-    35 &nbsp;&nbsp;&nbsp;&nbsp; 20
-  </div>
+  <!-- linha 3 -->
+  <div class="box">1</div>
+  <div class="text">+</div>
+  <div class="box">16</div>
+  <div class="text">= 17</div>
+
+  <!-- linha 4 (resultados embaixo) -->
+  <div class="text">= 25</div>
+  <div></div>
+  <div class="text">= 20</div>
+  <div></div>
+
+</div>
 
 </body>
 </html>
